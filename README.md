@@ -9,6 +9,15 @@ Requirements
 * serverless framework
 * sbt
 
+Install
+-----
+
+Run install command:
+
+```shell
+sls install -u https://github.com/iwaiawi/aws-scala-sbt-proguard
+```
+
 Usage
 -----
 
