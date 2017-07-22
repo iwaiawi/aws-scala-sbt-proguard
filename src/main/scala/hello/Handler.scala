@@ -1,11 +1,13 @@
 package hello
 
-import com.amazonaws.services.lambda.runtime.{Context, RequestHandler}
+import com.amazonaws.services.lambda.runtime.Context
+import fommil.sjs.FamilyFormats._
 
-class Handler extends RequestHandler[Request, Response] {
+class Handler extends ScalaHandler[Request, Response] {
 
-	def handleRequest(input: Request, context: Context): Response = {
-		return new Response("Go Serverless v1.0! Your function executed successfully!", input)
-	}
-
+  override def handle(request: Request, context: Context): Response = {
+    Response("Go Serverless v1.0! Your function executed successfully!", request)
+  }
 }
+
+

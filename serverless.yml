@@ -46,11 +46,11 @@ provider:
 
 # you can add packaging information here
 package:
-  artifact: target/scala-2.12/hello-proguard.jar
+  artifact: target/scala-2.11/hello-proguard.jar
 
 functions:
   hello:
-    handler: hello.Handler
+    handler: hello.Handler::handle
 
 #    The following are a few example events you can configure
 #    NOTE: Please make sure to change your handler code to work with those events

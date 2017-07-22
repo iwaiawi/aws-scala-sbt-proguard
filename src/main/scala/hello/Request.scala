@@ -1,7 +1,3 @@
 package hello
 
-import scala.beans.BeanProperty
-
-class Request(@BeanProperty var key1: String, @BeanProperty var key2: String, @BeanProperty var key3: String) {
-  def this() = this("", "", "")
-}
+case class Request(val key1: Option[String], val key2: Option[String], val key3: Option[String])

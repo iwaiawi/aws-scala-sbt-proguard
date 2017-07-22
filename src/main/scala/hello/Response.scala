@@ -1,5 +1,3 @@
 package hello
 
-import scala.beans.BeanProperty
-
-case class Response(@BeanProperty message: String, @BeanProperty request: Request)
+case class Response(val message: String, val request: Request)
